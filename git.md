@@ -188,3 +188,44 @@
 1. 把分支历史变成直线  
     同样没看懂
     https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648
+
+### 标签管理
+#### 创建标签  
+    标签和某个commit挂钩。
+1. 切换到需要打标签的分支上，然后：
+    ```shell
+    git tag 标签名
+    ```
+2. 查看标签
+    ```shell
+    git tag
+    ```
+3. 为历史提交打标签
+    ```shell
+    git tag 标签名 commit_id
+    ```
+4. 带有说明的标签
+    -a 指定标签名  
+    -m 标签说明
+    ```shell
+    git tag -a 标签名 -m "说明" commit_id 
+    ```
+5. 删除标签
+    ```shell
+    git tag -d 标签名
+    ```
+6. 推送标签到远程库
+    ```shell
+    git push origin 标签名
+    ```
+7. 推送所有未推送的标签到远程库
+    ```shell
+    git push origin --tags
+    ```
+8. 如果要删除已经推送到远程库的标签
+    ```shell
+    先从本地删除，然后
+    git push origin:refs/tags/标签名
+    ```
+
+    
