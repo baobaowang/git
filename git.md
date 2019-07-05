@@ -114,8 +114,34 @@
     git push origin master
     ```
 ##### 从远程库克隆
+1. 
     ```shell
     git clone git@github.com:用户名/仓库名.git
     ```
 
 #### 分支管理
+1. 查看分支  
+    git会列出所有分支，当前分支前面会有分号
+    ```shell
+    git branch
+    ```
+2. 创建分支
+    ``` shell
+    git branch 分支名
+    ```
+3. 切换分支
+    ```shell
+    git checkout 分支名
+    ```
+4. 创建并切换分支
+    ```shell
+    git checkout -b 分支名
+    ```
+5. 合并某分支到当前分支
+    ```
+    git merge 某分支名
+    ```
+6. 删除分支 
+    ``` 
+    git branch -d 分支名
+    ```
