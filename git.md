@@ -181,3 +181,10 @@
     git branch -D  分支名
     ```
 
+#### 多人协作
+1. 没看懂，放个连接：
+    https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320
+#### rebase操作
+1. 把分支历史变成直线  
+    同样没看懂
+    https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648
