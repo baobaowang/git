@@ -160,4 +160,24 @@
     git merge --no-ff -m "分支描述" dev
     ```
     这样合并的分支有历史记录。
+#### BUG分支
+1. 把当前工作现场“储存”起来
+    ```shell
+    git stash
+    ```
+2. 从需要修复bug的分支上创建临时分支后修复bug，修复完成后合并分支。
+3. 查看临时储存的工作现场
+    ```shell
+    git stash list
+    ```
+4. 恢复临时分支
+    ```shell
+    git stash pop
+    ```
+#### Feature分支
+1. 每开发一个新的功能时，最好新建一个分支。  
+2. 丢弃一个没有合并过的分支时,用大写D强制删除
+    ```shell
+    git branch -D  分支名
+    ```
 
