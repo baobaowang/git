@@ -1,4 +1,4 @@
-####安装git 
+#### 安装git 
 1. ubuntu下
     ```shell
     sudo apt-get install git
@@ -8,13 +8,13 @@
     git config --global user.name "you name"
     git config --global user.email "you email"
     ```
-####创建版本库
+#### 创建版本库
 1. 在需要创建版本库的文件夹下执行：
     ``` shell
     git init
     ```
 
-####版本回退
+#### 版本回退
 1. 把文件添加到暂存区
     ```shell
     git add 文件名.后缀
@@ -53,7 +53,7 @@
     ```shell
     git reflog
     ```
-####工作区和暂存区
+#### 工作区和暂存区
 1. 工作区就是电脑上的文件，  
     当前文件夹下的.git是一个版本库，版本库分两部分，1是git add添加的暂存区，2是 git commit提交到当前分支.  
 2. 管理修改    
@@ -62,7 +62,7 @@
     查看工作区和版本库最新版本的区别：
     git diff HEAD -- 文件名.后缀
     ```
-####撤销修改
+#### 撤销修改
 1. 放弃工作区的修改
     ```shell
     用版本库中的版本替换工作区的版本
@@ -76,7 +76,7 @@
     >>1. 没有添加到暂存区：git checkout -- 文件名.后缀 
     >>>2. 已经添加到暂存区：git reset HEAD 文件名.后缀，执行1.
     >>>>3. 已经提交到分支：版本回退
-####删除文件
+#### 删除文件
 1. 如果想删除一个文件
     在工作区删除后，在git中也要删除
     ```shell
@@ -87,8 +87,8 @@
     git checkout -- 文件名.后缀
     ```
 
-####远程仓库
-#####添加远程库
+#### 远程仓库
+##### 添加远程库
 1. 如果用户目录下没有.ssh文件夹,.ssh文件夹下没有id_rsa,id_rsa.pub两个文件,需要创建SSH.key。
     id_rsa是私有密钥，不要泄漏出去
     id_rsa是公有密钥，可以放心的告诉任何人
@@ -113,9 +113,9 @@
     ```shell
     git push origin master
     ```
-#####从远程库克隆
+##### 从远程库克隆
     ```shell
     git clone git@github.com:用户名/仓库名.git
     ```
 
-####分支管理
+#### 分支管理
