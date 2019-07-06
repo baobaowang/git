@@ -228,4 +228,7 @@
     git push origin:refs/tags/标签名
     ```
 
-    
+### 自定义git
+#### push时忽略一些文件
+1. 在.git同级目录创建.gitignore，把需要忽略的文件名填进去。  
+    https://www.liaoxuefeng.com/wiki/896043488029600/900004590234208
