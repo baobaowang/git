@@ -91,7 +91,7 @@
 ##### 添加远程库
 1. 如果用户目录下没有.ssh文件夹,.ssh文件夹下没有id_rsa,id_rsa.pub两个文件,需要创建SSH.key。
     id_rsa是私有密钥，不要泄漏出去
-    id_rsa是公有密钥，可以放心的告诉任何人
+    id_rsa.pub是公有密钥，可以放心的告诉任何人
     ```shell
     ssh-keygen -t rsa -C "youremail@example.com"
     ```
